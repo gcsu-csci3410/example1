@@ -1,5 +1,7 @@
-public class StringList
-{
+import java.util.Iterator;
+
+public class StringList implements  Iterable<String>{
+ 
   private final int DEFAULT_CAPACITY = 10;
   private final int RESIZE_FACTOR = 2;
   private String[] list;
@@ -80,5 +82,9 @@ public class StringList
     s = s+"]";
     return s;  
   }
+   public Iterator<String> iterator() {
+  
+  return new StringListIterator(this);
+ }
   
 }
