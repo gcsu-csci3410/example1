@@ -11,6 +11,6 @@ public class Demo
     System.out.println(myList); 
   }//main
 }
-/* 
+/* Sample Output
  [apple, pear, grapes]
  */
